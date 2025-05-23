@@ -2,7 +2,7 @@ import BackgroundPattern from "./BackgroundPattern";
 
 export default function Section6() {
   return (
-    <section className="w-full py-20 relative text-white font-sans">
+    <section className="w-full py-5 relative text-white font-sans">
       <BackgroundPattern />
 
       <div className="flex-wrap z-40 relative md:flex-nowrap top-0 flex gap-8 item-center justify-center container">

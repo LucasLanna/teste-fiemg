@@ -40,6 +40,7 @@ export default function Intro() {
         width="w-6"
         style={{ top: "38%", left: "10%" }}
         animation="3s"
+        className="hidden lg:block"
       />
 
       <FloatingBit
@@ -47,6 +48,7 @@ export default function Intro() {
         width="w-5"
         style={{ top: "60%", right: "15%" }}
         animation="4s"
+        className="hidden lg:block"
       />
 
       <FloatingBit
@@ -54,6 +56,7 @@ export default function Intro() {
         width="w-8"
         style={{ bottom: "35%", right: "0%" }}
         animation="2.5s"
+        className="hidden lg:block"
       />
 
       <img

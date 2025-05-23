@@ -17,6 +17,7 @@ export default function Section3() {
           width="w-5"
           style={{ top: "16px", left: "16px" }}
           animation="3s"
+          className="hidden lg:block"
         />
 
         <FloatingBit
@@ -24,7 +25,7 @@ export default function Section3() {
           width="w-5"
           style={{ bottom: "16px", right: "16px" }}
           animation="3.5s"
-          className="rotate-90"
+          className="rotate-90 hidden lg:block"
         />
 
         <h4
