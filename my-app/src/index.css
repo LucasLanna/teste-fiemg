@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-gradient-to-b from-[#10006A] to-[#6E0085];
+}
+
+/* TYPOGRAPHY */
+
+.display {
+  @apply font-pixelbold font-bold text-[47px] text-mustard text-shadow-dropshadow;
+  filter: drop-shadow(2px 2px #3b2027) drop-shadow(2px -2px #3b2027)
+    drop-shadow(-2px 2px #3b2027) drop-shadow(-2px -2px #3b2027);
+}
+
+h1 {
+  @apply font-pixelbold font-bold text-[30px] text-mustard text-shadow-dropshadow;
+  filter: drop-shadow(2px 2px #3b2027) drop-shadow(2px -2px #3b2027)
+    drop-shadow(-2px 2px #3b2027) drop-shadow(-2px -2px #3b2027);
+}
+
+h2 {
+  @apply font-pixelbold font-bold text-[43px];
+}
+
+h3 {
+  @apply font-pixelbold font-bold text-[30px];
+}
+
+h4 {
+  @apply font-pixelbold font-bold text-[24px];
+}
+
+h5 {
+  @apply font-pixelbold font-bold text-[18px];
+}
+
+p {
+  @apply font-rigsans text-[18px];
+}
+
+.t {
+  @apply font-pixelbold  text-[30px];
+}
+
+/* THEMES */
+
+@theme {
+  --font-pixel: "pixel", "sans-serif";
+  --font-pixelbold: "pixelbold", "sans-serif";
+  --font-rigsans: "rigsans", "sans-serif";
+  --font-rigsansbold: "rigsansbold", "sans-serif";
+  --color-mustard: #efb440;
+  --color-brown: #3b2027;
+  --color-bege: #ffd9ac;
+  --text-shadow-dropshadow: 0 2px 2px #3b2027;
+  --shadow-objectshadow: 0 2px 2px #3b2027;
+}
+
+/* CUSTOM FONTS */
+
+@font-face {
+  font-family: "pixel";
+  src: url("/fonts/LoRes9PlusOT.otf") format("opentype");
+}
+@font-face {
+  font-family: "pixelbold";
+  src: url("/fonts/LoRes12OtBold2.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "rigsans";
+  src: url("/fonts/RigSans-Regular2.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "rigsansbold";
+  src: url("/fonts/RigSans-Bold2.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* ANIMATIONS */
+
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-40px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+}
+
+.animate-rise {
+  animation: rise 1.7s ease-out forwards;
+}
+
+.container {
+  @apply max-w-6xl w-full px-2 md:px-4 mx-auto;
+}
+
+.mustard-container {
+  @apply shadow-objectshadow border-2 border-brown;
+}
