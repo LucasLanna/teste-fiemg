@@ -1,7 +1,7 @@
 export default function Header({ logged, user, onLogin, onSignup, onLogout }) {
   return (
     <header className="w-full px-12 pt-6 pb-2">
-      <div className="w-full  max-w-[1178px] mt-8 mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <div className="max-w-[1178px] mt-8 mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
         <img
           src="/images/logo.png"
           alt="ATE ADVENTURES"

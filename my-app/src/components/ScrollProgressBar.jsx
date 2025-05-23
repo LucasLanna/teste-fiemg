@@ -22,7 +22,7 @@ export default function ScrollProgressBar() {
       className="
         fixed top-4 sm:top-6 md:top-7 left-0 right-0 mx-auto
         w-full
-        lg:max-w-[1120px] md:max-w-[720px] max-w-[1120px]
+        lg:max-w-[1180px] md:max-w-[720px] max-w-[1120px]
         px-4 sm:px-6 lg:px-0 z-50"
     >
       <div className="relative w-full">
