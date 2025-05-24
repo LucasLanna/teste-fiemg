@@ -38,7 +38,7 @@ export default function Section5() {
           interagindo com o gráfico abaixo:
         </p>
 
-        <div className="bg-[#F3FDE8] text-black font-bold py-2 px-6 rounded-md text-xl mb-12 shadow-md w-full text-center">
+        <div className="bg-gradient-to-b  from-[#F5FFE8] to-[#CCD6BF] text-black font-bold py-2 px-6 rounded-md text-xl mb-12 shadow-md w-full text-center">
           COMPUTAÇÃO
         </div>
 
@@ -54,8 +54,8 @@ export default function Section5() {
               <span
                 className={`text-sm font-bold px-3 py-2 rounded-md shadow ${
                   selectedId === comp.id
-                    ? "bg-yellow-400 text-black"
-                    : "bg-[#E8F3FD] text-black"
+                    ? "bg-[#F0B541] text-black"
+                    : "bg-gradient-to-b  from-[#F5FFE8] to-[#CCD6BF] text-black"
                 }`}
               >
                 {comp.name}

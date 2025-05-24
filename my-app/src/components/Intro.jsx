@@ -14,7 +14,7 @@ export default function Intro() {
 
       <div
         className="relative w-full max-w-2xl
-        border-[24px] border-yellow-400
+        border-[24px] border-[#F0B541]
         shadow-[8px_8px_0px_#3b2027]
         overflow-hidden rounded-md z-10"
       >

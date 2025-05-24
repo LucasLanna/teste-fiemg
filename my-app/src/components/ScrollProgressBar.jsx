@@ -41,7 +41,7 @@ export default function ScrollProgressBar() {
         rounded-full overflow-hidden border-2 border-neutral-300"
         >
           <div
-            className="h-full bg-gradient-to-r from-yellow-400 to-orange-400"
+            className="h-full bg-gradient-to-b from-[#F0B541] to-[#DFA22B]"
             style={{ width: `${progress}%` }}
           ></div>
         </div>

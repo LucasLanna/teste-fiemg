@@ -25,13 +25,13 @@ export default function Header({ logged, user, onLogin, onSignup, onLogout }) {
             <>
               <button
                 onClick={onLogin}
-                className="text-xs md:text-sm text-brown border bg-white border-brown px-4 py-1 rounded hover:bg-brown/10 transition pixel-font"
+                className="text-xs md:text-sm text-brown border bg-[#F5FFE8] border-brown px-4 py-1 rounded hover:bg-yellow-200 transition pixel-font"
               >
                 Login
               </button>
               <button
                 onClick={onSignup}
-                className="text-xs md:text-sm text-brown bg-yellow-400 px-4 py-1 rounded font-semibold hover:bg-yellow-300"
+                className="text-xs md:text-sm text-brown bg-[#F0B541] px-4 py-1 rounded font-semibold hover:bg-yellow-300"
               >
                 Cadastro
               </button>
