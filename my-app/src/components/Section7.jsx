@@ -9,7 +9,7 @@ export default function Section7() {
           </span>
         </div>
 
-        <div className="bg-[#F3FDE8] text-black font-bold text-sm md:text-base px-6 py-4 rounded-md border border-black inline-block shadow-lg transition-transform hover:scale-105 cta-box">
+        <div className="bg-gradient-to-b  from-[#F5FFE8] to-[#CCD6BF] text-black font-bold text-sm md:text-base px-6 py-4 rounded-md border border-black inline-block shadow-lg transition-transform hover:scale-105 cta-box">
           <div className="flex items-center gap-4">
             <img
               src="images/MEDALBLOCK.png"

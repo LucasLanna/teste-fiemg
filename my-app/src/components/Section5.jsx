@@ -51,10 +51,12 @@ export default function Section5() {
               }`}
               onClick={() => setSelectedId(comp.id)}
             >
+              <img src="images/arrow.png" alt="Seta" className="h-6" />
+
               <span
-                className={`text-sm font-bold px-3 py-2 rounded-md shadow ${
+                className={`text-sm font-bold px-3 w-55 py-2 rounded-md shadow ${
                   selectedId === comp.id
-                    ? "bg-[#F0B541] text-black"
+                    ? "bg-[#F0B541] text-black shadow-objectshadow"
                     : "bg-gradient-to-b  from-[#F5FFE8] to-[#CCD6BF] text-black"
                 }`}
               >
@@ -62,7 +64,7 @@ export default function Section5() {
               </span>
               <img
                 src="images/QUESTIONBLOCK.png"
-                alt="Question Block"
+                alt="Blocos"
                 className="h-13"
               />
               <div className="flex gap-1 mt-2">
@@ -73,17 +75,14 @@ export default function Section5() {
         </div>
 
         {selected && (
-          <div
-            className="
-      bg-[#F3FDE8] text-black mt-12 p-6 rounded-lg md:h-[249px] shadow-lg w-full max-w-[360px] sm:max-w-[500px] md:max-w-[900px] mx-auto relative overflow-hidden transition-all duration-300"
-          >
-            <h3 className="font-bold text-lg mb-2">{selected.name}</h3>
+          <div className="bg-gradient-to-b  from-[#F5FFE8] to-[#CCD6BF] text-brown text-left mt-12 p-6 rounded-lg md:h-[249px] shadow-lg w-full max-w-[360px] sm:max-w-[500px] md:max-w-[900px] mx-auto relative overflow-hidden transition-all duration-300">
+            <span className="font-bold text-[20px]">{selected.name}</span>
             <p className="text-sm leading-relaxed overflow-y-auto pr-2">
               {selected.description}
             </p>
-            <button className="absolute top-3 right-3 text-gray-600 hover:text-black">
-              ✖
-            </button>
+            <div className="absolute top-3  right-3 size-7 cursor-pointer">
+              <img src="/images/closesymbol.svg" alt="Fechar" />
+            </div>
           </div>
         )}
       </div>
