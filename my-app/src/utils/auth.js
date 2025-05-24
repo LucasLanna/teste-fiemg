@@ -1,26 +1,25 @@
-// Save user information to localStorage
+// Salva informação no localStorage.
 export function saveUser(user) {
   localStorage.setItem("user", JSON.stringify(user));
 }
 
-// Get the saved user from localStorage
+// Puxa o usuário salvo do localstorage.
 export function getUser() {
   const user = localStorage.getItem("user");
   return user ? JSON.parse(user) : null;
 }
 
-// Create a login session (mark as logged in)
+// Sessão Criar Login.
 export function login() {
   localStorage.setItem("isLoggedIn", "true");
 }
 
-// Check if user is logged in
+// Checagem se o usuário está logado.
 export function isLoggedIn() {
   return localStorage.getItem("isLoggedIn") === "true";
 }
 
-// Logout (clear session)
+// Loggout, termina a sessão. (Usuário contínua no local storage.)
 export function logout() {
   localStorage.removeItem("isLoggedIn");
-  // localStorage.removeItem("user");
 }
