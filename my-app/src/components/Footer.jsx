@@ -1,6 +1,6 @@
 export default function footer() {
   return (
-    <div className="">
+    <div>
       <img src="images/footer-flag.png" alt="Ambiente com bandeira" />
     </div>
   );

@@ -13,7 +13,7 @@ export default function Intro() {
       </span>
 
       <div
-        className="relative w-full max-w-2xl
+        className="relative w-full max-w-3xl
         border-[24px] border-[#F0B541]
         shadow-[8px_8px_0px_#3b2027]
         overflow-hidden rounded-md z-10"
@@ -38,7 +38,7 @@ export default function Intro() {
       <FloatingBit
         src="/images/bl-1.png"
         width="w-6"
-        style={{ top: "38%", left: "10%" }}
+        style={{ top: "35%", left: "0%" }}
         animation="3s"
         className="hidden lg:block"
       />
@@ -46,7 +46,7 @@ export default function Intro() {
       <FloatingBit
         src="/images/bl-2.png"
         width="w-5"
-        style={{ top: "60%", right: "15%" }}
+        style={{ top: "75%", right: "5%" }}
         animation="4s"
         className="hidden lg:block"
       />
@@ -54,19 +54,19 @@ export default function Intro() {
       <FloatingBit
         src="/images/bl-3.png"
         width="w-8"
-        style={{ bottom: "35%", right: "0%" }}
+        style={{ bottom: "35%", right: "-25%" }}
         animation="2.5s"
         className="hidden lg:block"
       />
 
       <img
         src="/images/block-side.png"
-        className="w-[300px] object-contain absolute -left-95 bottom-15 z-[-1]"
+        className="w-[250px] object-contain absolute -left-95 bottom-15 z-[-1]"
       />
 
       <img
         src="/images/block-side.png"
-        className="w-[300px] object-contain absolute -right-95 bottom-15 z-[-1] scale-x-[-1]"
+        className="w-[250px] object-contain absolute -right-95 bottom-15 z-[-1] scale-x-[-1]"
       />
 
       <style>{`

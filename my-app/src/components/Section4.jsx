@@ -1,6 +1,6 @@
 export default function Section4() {
   return (
-    <section className="w-full text-white py-20 container">
+    <section className="w-full text-white py-5 container">
       <div className="w-full flex flex-col md:flex-row items-center justify-center gap-10">
         <div className="relative">
           <img
